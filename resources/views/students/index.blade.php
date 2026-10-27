@@ -87,6 +87,6 @@
     {{ $students->links('pagination.sms') }}
   </div>
 
-  <a href="{{ route('students.create') }}" class="bigbtn"><i class="fa-solid fa-user-plus"></i>&nbsp; Back to Student Form</a>
+  <a href="{{ route('students.create') }}" class="bigbtn"><i class="fa-solid fa-user-plus"></i>&nbsp; Add New Student </a>
 </div>
 @endsection

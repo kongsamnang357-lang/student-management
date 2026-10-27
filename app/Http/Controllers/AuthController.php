@@ -38,7 +38,7 @@ class AuthController extends Controller
         $data = $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255', 'unique:users,email'],
-            'password' => ['required', 'string', 'min:5'],
+            'password' => ['required', 'string', 'min:5', 'confirmed'],
         ]);
 
         $user = User::create($data);   // User model casts password => hashed
